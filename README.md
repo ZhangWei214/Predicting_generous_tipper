@@ -10,7 +10,8 @@ The TLC wants to use the model in an app that will alert taxi drivers to custome
 ## Data Understanding
 There are two dataframes: one containing the original data, the other containing the mean durations, mean distances, and predicted faresThe features included information on trip duration and destination, vendor used, toll information, and payment type. Join the two dataframes，We can get the data consisting of approximately 22699 rows and 21 features. The bar chart right shows how many generous tippers (>=20%) versus tippers(=<20%） that exist in the data set.![generous](images/generous.PNG)
 ## Modeling and Evaluation
-The data team used two different modeling architectures（random forest and XGBoost) and compared their results. Both models performed acceptably, with a random forest architecture yielding slightly better predictions.The model’s F1 score was 0.7235.The right plot shows F1 scores  for random forest and XGBoost model.
+The data team used two different modeling architectures（random forest and XGBoost) and compared their results. Both models performed acceptably, with a random forest architecture yielding slightly better predictions.The model’s F1 score was 0.7235.
+The right plot shows F1 scores  for random forest and XGBoost model. ![F1 scores](images/chart.PNG)
 ## Conclusion
 The resulting algorithm is usable to predict riders who might be generous tippers, with reasonably strong precision, recall, F1, and overall accuracy scores.
 As a next step, the data team can consult the TLC to share the model results and recommend that the model could be used as an indicator of tip amount. However, additional data would be needed to realize significant improvement to the model.
